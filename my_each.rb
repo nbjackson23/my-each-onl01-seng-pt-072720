@@ -1,4 +1,4 @@
-def array.forEach(callback)
+def my_each 
 
 function iterativeLog(array) {
   array.forEach(element, index) {
