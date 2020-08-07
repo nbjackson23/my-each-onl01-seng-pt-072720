@@ -9,7 +9,7 @@ def my_each(array)
   end
 end
 
-my_each(list) {|i| puts "So I think #{i} is hard"}
+my_each(list) {|i| "So I think #{i} is hard"}
 
 # Use the collection method 
 # To make the *return-value* the answer you want
@@ -25,4 +25,4 @@ def hello(array)
   collection
 end
 
-hello(list) {|i| puts "Hello #{i} what's up?"}
+hello(list) {|i| "Hello #{i} what's up?"}
