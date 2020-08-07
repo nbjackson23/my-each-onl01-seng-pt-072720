@@ -9,4 +9,4 @@ def my_each(array)
 end
 
 
-
+my_each(list) {|i| puts "So I think #{i} is hard"}
