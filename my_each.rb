@@ -1,4 +1,3 @@
-
 list = ["ab", "cd", "ef"]
 
 def my_each(array)
@@ -8,5 +7,6 @@ def my_each(array)
     i = i + 1
   end
 end
+
 
 
