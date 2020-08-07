@@ -1,18 +1,29 @@
-def array.forEach(callback)
+list = ["ab", "cd", "ef"]
 
-function iterativeLog(array) {
-  array.forEach(element, index) {
-    console.log(`${index}: ${element}`)
-  } 
-}
-
-function iterate(callback) {
-  const lotteryNumbers = [2, 4, 5, 2]
-  lotteryNumbers.forEach(callback)
-  return lotteryNumbers 
-}
-
-function doToArray(array, callback) {
-  array.forEach(callback)
-} 
+def my_each(array)
+  i = 0
+  while i < array.length
+# The "while" method will always return a value of => nil"
+    yield(array[i])
+    i = i + 1
+  end
+  array
 end
+
+my_each(list) {|i| "So I think #{i} is hard"}
+
+# Use the collection method 
+# To make the *return-value* the answer you want
+# instead of "=> nil"
+
+def hello(array)
+  i = 0
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection
+end
+
+hello(list) {|i| "Hello #{i} what's up?"}
